@@ -1,0 +1,123 @@
+baseURL = 'https://liviubarbat.com'
+languageCode = 'en-us'
+title = 'liviubarbat.info'
+theme = "hello-friend-ng"
+
+paginate = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+
+[params]
+  ###########################################
+  # Home subtitle of the index page.
+  ###########################################
+  homeSubtitle = "MEM and more"
+
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Set a background for the homepage - this is not working yet, but I don't necessarily want it
+  #backgroundImage = "assets/images/background.jpg"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = true
+
+  ######################################  
+  # Enable theme toggle - dark mode
+  ######################################
+  enableThemeToggle = true
+
+  ######################
+  # Sharing buttons
+  ######################
+  # There are a lot of buttons preconfigured. If you want to change them,
+  # generate the buttons here: https://sharingbuttons.io
+  # and add them into your own `layouts/partials/sharing-buttons.html`
+  #
+  enableSharingButtons = true
+
+  [params.author]
+    name = "Liviu Barbat"
+  
+  ###################
+  # Custom footer
+  ###################
+  [params.footer]
+    trademark = 2024
+    copyright = false
+    author = false
+
+    topText = []
+    bottomText = [
+      "Created using <a href=\"http://gohugo.io\">Hugo</a>",
+      "Deployed through <a href=\"https://www.netlify.com/\">Netlify</a>"
+    ]
+
+  [params.logo]
+    logoMark     = ">"
+    logoText     = "whois liviubarbat"
+    logoHomeLink = "/"
+    # Set true to remove the logo cursor entirely.
+    logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    logoCursorColor    = "#33FF00"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    logoCursorAnimate  = "1s"
+    # Append the current url pathname to logoText 
+    # logoCursorPathname = true
+
+  ################################### 
+  # Addon: Startpage portrait 
+  ###################################
+  # Uncomment this if you want a portrait on your start page
+  [params.portrait]
+     path     = "/img/whoami.jpg"
+     alt      = "Portrait"
+  #  maxWidth = "50px"
+
+  ###########################################
+  # Addon: Social icons
+  ###########################################
+
+  [[params.social]]
+    name = "twitter"
+    url  = "https://x.com/LeeviewB/status/1706257201906557001"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/barbatliviu/"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About me"
+    url        = "about/"
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
+
+
+[markup.goldmark.parser.attribute]
+block = true # default is false
