@@ -64,7 +64,7 @@ publishDir   = "public"
   # Custom footer
   ###################
   [params.footer]
-    trademark = 2024
+    trademark = 2026
     copyright = false
     author = false
 
