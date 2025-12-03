@@ -10,4 +10,4 @@ title = "About me"
 
 :writing_hand: He also enjoys writing blog articles whenever he has the chance, but finds that the time to write a useful and well-documented is very limited.
 
-:man_technologist: He also is also the found and organizer of a networking, community event, [RomUG](https://romug.ro/).
+:man_technologist: He also is also the founder and organizer of a networking, community event, [RomUG](https://romug.ro/).
